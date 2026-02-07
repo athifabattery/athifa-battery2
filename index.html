@@ -1,180 +1,109 @@
 <!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Athifa Battery 2 | Toko Aki & Suku Cadang</title>
-  <meta name="description" content="Athifa Battery 2 menyediakan aki mobil dan motor berkualitas dengan harga bersahabat. Hubungi kami via WhatsApp sekarang." />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
-    body { background: #f5f5f5; color: #222; }header {
-  background: linear-gradient(135deg, #111, #333);
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athifa Battery 2 | Toko Aki Mobil & Motor</title>
+  <meta name="description" content="Athifa Battery 2 menyediakan aki mobil & motor berkualitas, stok lengkap, harga bersahabat. Hubungi via WhatsApp sekarang.">  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+    body{background:#f5f5f5;color:#222}
 
-header h1 { font-size: 2rem; margin-bottom: 10px; }
-header p { font-size: 1rem; opacity: 0.9; }
+    header{background:linear-gradient(135deg,#111,#333);color:#fff;padding:30px 20px;text-align:center}
+    header h1{font-size:2rem;margin-bottom:10px}
+    header p{opacity:.9}
 
-/* SLIDER */
-.slider {
-  position: relative;
-  max-width: 1200px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
+    /* SLIDER PRODUK */
+    .slider{max-width:1200px;margin:20px auto;overflow:hidden;border-radius:16px;box-shadow:0 6px 15px rgba(0,0,0,.2)}
+    .slides{display:flex;transition:transform .6s ease-in-out}
+    .slides img{width:100%;height:300px;object-fit:cover;flex-shrink:0}
+    @media(max-width:600px){.slides img{height:220px}}
 
-.slides {
-  display: flex;
-  transition: transform 0.6s ease-in-out;
-}
+    /* IKLAN FB SECTION */
+    .fb-ads{background:#0d47a1;color:#fff;padding:40px 20px;text-align:center}
+    .fb-ads h2{margin-bottom:15px}
 
-.slides img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
+    /* TESTIMONI */
+    .testimonials{background:#f9f9f9;padding:40px 20px;text-align:center}
+    .testimonial-slider{max-width:800px;margin:30px auto;overflow:hidden}
+    .testimonial-slides{display:flex;transition:transform .6s ease}
+    .testimonial-item{min-width:100%;padding:20px}
+    .testimonial-box{background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+    .stars{color:#fbc02d;font-size:1.2rem}
 
-@media (max-width:600px){
-  .slides img{ height:220px; }
-}
+    /* BENEFIT */
+    .benefits{background:#fff;padding:30px 20px;text-align:center}
+    .benefit-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:auto}
+    .benefit{background:#fafafa;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
 
-.benefits {
-  background: #fff;
-  padding: 30px 20px;
-  text-align: center;
-}
+    /* MAP */
+    .maps{background:#fff;padding:30px 20px;text-align:center}
 
-.benefits h2 { margin-bottom: 20px; }
+    footer{background:#111;color:#fff;text-align:center;padding:25px 15px 80px}
 
-.benefit-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.benefit {
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-footer {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 25px 15px 80px;
-  position: relative;
-}
-
-footer p { font-size: 0.9rem; opacity: 0.85; }
-
-.wa-cta {
-  position: fixed;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #25D366;
-  color: #fff;
-  padding: 15px 25px;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  z-index: 999;
-}
-
-.wa-cta:hover { background: #1ebe5d; }
-
-  </style>
-</head>
-<body>  <header>
-    <h1>Athifa Battery 2</h1>
-    <p>Toko Aki & Suku Cadang Kendaraan • Berkualitas & Terpercaya</p>
-  </header>  <section class="slider">
-    <div class="slides">
-      <img src="aki1.jpg" alt="Aki Mobil">
-      <img src="aki2.jpg" alt="Aki Motor">
-      <img src="aki3.jpg" alt="Aki Mobil Premium">
-      <img src="aki4.jpg" alt="Aki Motor Harian">
-      <img src="aki5.jpg" alt="Aki Kering">
-      <img src="aki6.jpg" alt="Aki Basah">
-      <img src="aki7.jpg" alt="Stok Aki Lengkap">
-      <img src="aki8.jpg" alt="Display Aki Toko">
-      <img src="aki9.jpg" alt="Aki Mobil Berkualitas">
-      <img src="aki10.jpg" alt="Aki Motor Berkualitas">
-      <img src="aki11.jpg" alt="Aki Kendaraan">
-      <img src="aki12.jpg" alt="Aki Siap Pakai">
-    </div>
-  </section>  <section class="fb-ads" style="background:#0d47a1;color:#fff;padding:40px 20px;text-align:center;">
-    <h2>🚨 Aki Lemah? Jangan Tunggu Mogok!</h2>
-    <p style="max-width:800px;margin:15px auto;font-size:1.05rem;">Athifa Battery 2 menyediakan aki mobil & motor berkualitas dengan harga bersahabat. Cocok untuk harian maupun perjalanan jauh.</p>
-    <p style="font-weight:bold;">👉 Klik tombol WhatsApp di bawah & dapatkan rekomendasi aki yang tepat!</p>
-  </section>  <section class="testimonials" style="background:#f9f9f9;padding:40px 20px;text-align:center;">
-    <h2>⭐ Testimoni Pelanggan ⭐</h2>
-    <p style="display:flex;justify-content:center;align-items:center;gap:8px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google Review" style="width:24px;height:24px;"> 
-      Review Google • Rating 5.0
-    </p><div class="testimonial-slider" style="max-width:800px;margin:30px auto;overflow:hidden;">
-  <div class="testimonial-slides" style="display:flex;transition:transform 0.6s ease;">
-    <div class="testimonial-item" style="min-width:100%;padding:20px;">
-      <div style="background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-        <div style="color:#fbc02d;font-size:1.2rem;">★★★★★</div>
-        <p>"Pelayanan cepat, aki sesuai rekomendasi dan kualitasnya bagus."</p>
-        <strong>— Andi</strong>
-      </div>
-    </div>
-    <div class="testimonial-item" style="min-width:100%;padding:20px;">
-      <div style="background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-        <div style="color:#fbc02d;font-size:1.2rem;">★★★★★</div>
-        <p>"Harga bersaing, respon WA cepat, sangat membantu."</p>
-        <strong>— Rina</strong>
-      </div>
-    </div>
-    <div class="testimonial-item" style="min-width:100%;padding:20px;">
-      <div style="background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-        <div style="color:#fbc02d;font-size:1.2rem;">★★★★★</div>
-        <p>"Stok lengkap dan bisa konsultasi dulu sebelum beli."</p>
-        <strong>— Dedi</strong>
-      </div>
-    </div>
-    <div class="testimonial-item" style="min-width:100%;padding:20px;">
-      <div style="background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-        <div style="color:#fbc02d;font-size:1.2rem;">★★★★★</div>
-        <p>"Datang ke toko langsung, pelayanan ramah dan profesional."</p>
-        <strong>— Sari</strong>
-      </div>
+    /* CTA WA */
+    .wa-cta{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);background:#25D366;color:#fff;padding:15px 25px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 6px 15px rgba(0,0,0,.3);z-index:999}
+  </style></head>
+<body><header>
+  <h1>Athifa Battery 2</h1>
+  <p>Toko Aki Mobil & Motor • Stok Lengkap • Terpercaya</p>
+</header><!-- SLIDER PRODUK --><section class="slider">
+  <div class="slides">
+    <img src="aki1.jpg" alt="Aki Mobil">
+    <img src="aki2.jpg" alt="Aki Motor">
+    <img src="aki3.jpg" alt="Aki Mobil Premium">
+    <img src="aki4.jpg" alt="Aki Motor Harian">
+    <img src="aki5.jpg" alt="Aki Kering">
+    <img src="aki6.jpg" alt="Aki Basah">
+    <img src="aki7.jpg" alt="Stok Aki Lengkap">
+    <img src="aki8.jpg" alt="Display Aki Toko">
+    <img src="aki9.jpg" alt="Aki Mobil Berkualitas">
+    <img src="aki10.jpg" alt="Aki Motor Berkualitas">
+    <img src="aki11.jpg" alt="Aki Kendaraan">
+    <img src="aki12.jpg" alt="Aki Siap Pakai">
+  </div>
+</section><!-- COPY IKLAN FB --><section class="fb-ads">
+  <h2>🚨 Aki Lemah? Jangan Tunggu Mogok!</h2>
+  <p>Athifa Battery 2 siap membantu kebutuhan aki kendaraan Anda dengan produk berkualitas & harga bersahabat.</p>
+  <p><strong>👉 Klik WhatsApp sekarang untuk konsultasi gratis</strong></p>
+</section><!-- TESTIMONI --><section class="testimonials">
+  <h2>⭐ Testimoni Pelanggan</h2>
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="22"> Review Google • Rating 5.0</p>  <div class="testimonial-slider">
+    <div class="testimonial-slides">
+      <div class="testimonial-item"><div class="testimonial-box"><div class="stars">★★★★★</div><p>Pelayanan cepat dan aki sesuai rekomendasi.</p><strong>— Andi</strong></div></div>
+      <div class="testimonial-item"><div class="testimonial-box"><div class="stars">★★★★★</div><p>Harga bersaing, respon WA sangat cepat.</p><strong>— Rina</strong></div></div>
+      <div class="testimonial-item"><div class="testimonial-box"><div class="stars">★★★★★</div><p>Stok lengkap dan bisa konsultasi dulu.</p><strong>— Dedi</strong></div></div>
+      <div class="testimonial-item"><div class="testimonial-box"><div class="stars">★★★★★</div><p>Pelayanan ramah dan profesional.</p><strong>— Sari</strong></div></div>
     </div>
   </div>
-</div>
+</section><!-- BENEFIT --><section class="benefits">
+  <h2>Kenapa Pilih Kami?</h2>
+  <div class="benefit-list">
+    <div class="benefit">🔋 Stok Aki Lengkap</div>
+    <div class="benefit">✅ Produk Berkualitas</div>
+    <div class="benefit">💰 Harga Bersahabat</div>
+    <div class="benefit">⚡ Respon Cepat</div>
+  </div>
+</section><!-- MAP --><section class="maps">
+  <h2>📍 Lokasi Toko</h2>
+  <iframe src="https://www.google.com/maps?q=-5.971389,106.095167&z=17&output=embed" width="100%" height="300" style="border:0;border-radius:12px" loading="lazy"></iframe>
+</section><footer>
+  <p>© 2026 Athifa Battery 2</p>
+</footer><a class="wa-cta" href="https://wa.me/6283803888990?text=Halo%20Athifa%20Battery%202%2C%20saya%20mau%20tanya%20aki%20kendaraan" target="_blank">💬 Chat WhatsApp</a>
 
-  </section>  <section class="benefits">
-    <h2>Kenapa Pilih Athifa Battery 2?</h2>
-    <div class="benefit-list">
-      <div class="benefit">🔋 Aki Mobil & Motor Lengkap</div>
-      <div class="benefit">✅ Produk Berkualitas & Teruji</div>
-      <div class="benefit">💰 Harga Bersahabat</div>
-      <div class="benefit">⚡ Respon Cepat & Amanah</div>
-    </div>
-  </section>  <section class="maps" style="background:#fff;padding:30px 20px;text-align:center;">
-    <h2>📍 Lokasi Toko Kami</h2>
-    <p>Kunjungi Athifa Battery 2 langsung di lokasi</p>
-    <div style="max-width:900px;margin:20px auto;">
-      <iframe src="https://www.google.com/maps.app.goo.gl/MNhpcuwFx448hw596&z=17&output=embed" width="100%" height="300" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>  <footer>
-    <p>© 2026 Athifa Battery 2 • Semua Hak Dilindungi</p>
-  </footer>  <a class="wa-cta" href="https://wa.me/6283803888990?text=Halo%20Athifa%20Battery%202%2C%20saya%20mau%20tanya%20aki%20kendaraan" target="_blank">
-    💬 Pesan via WhatsApp
-  </a></body>
+<!-- SCRIPT SLIDER PRODUK --><script>
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }, 3000);
+
+  const tSlides = document.querySelector('.testimonial-slides');
+  const tTotal = tSlides.children.length;
+  let tIndex = 0;
+  setInterval(() => {
+    tIndex = (tIndex + 1) % tTotal;
+    tSlides.style.transform = `translateX(-${tIndex * 100}%)`;
+  }, 4000);
+</script></body>
 </html>
